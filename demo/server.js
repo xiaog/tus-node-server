@@ -5,20 +5,19 @@ const fs = require('fs');
 
 const Server = require('../index').Server;
 const FileStore = require('../index').FileStore;
-const GCSDataStore = require('../index').GCSDataStore;
+const FileUpyunStore = require('../index').FileUpyunStore;
 const EVENTS = require('../index').EVENTS;
 
 const server = new Server();
 
-const data_store = process.env.DATA_STORE || 'FileStore';
+const data_store = 'FileUpyunStore';
 
 switch (data_store) {
-    case 'GCSDataStore':
+    case 'FileUpyunStore':
         server.datastore = new GCSDataStore({
-            path: '/files',
-            projectId: 'vimeo-open-source',
-            keyFilename: path.resolve(__dirname, '../keyfile.json'),
-            bucket: 'tus-node-server',
+            bucket: 'buckets',
+            username: 'username',
+            password: 'password'
         });
         break;
 
