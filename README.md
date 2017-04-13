@@ -16,7 +16,6 @@ $ npm install https://github.com/xiaog/tus-node-server.git --save
     ```
 - **Upyun Storage**
     ```js
-
     server.datastore = new tus.FileUpyunStore({
         path: '/files',
         bucket: 'buckets',

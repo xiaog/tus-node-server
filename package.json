@@ -50,13 +50,13 @@
     "mocha-lcov-reporter": "^1.0.0",
     "should": "^8.0.1",
     "supertest": "^1.1.0",
-    "tus-js-client": "^1.1.4"
+    "tus-js-client": "^1.1.4",
+    "upyun": "^2.0.4"
   },
   "dependencies": {
     "configstore": "^2.0.0",
     "crypto-rand": "0.0.2",
     "object-assign": "^4.1.0",
-    "request": "^2.72.0",
-    "upyun": "^2.0.4"
+    "request": "^2.72.0"
   }
 }
