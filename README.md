@@ -114,18 +114,6 @@ server.on(EVENTS.EVENT_UPLOAD_COMPLETE, (event) => {
     }
     ```
 
-#### Custom `GET` handlers:
-Add custom `GET` handlers to suit your needs, similar to [Express routing](https://expressjs.com/en/guide/routing.html).
-```js
-const server = new Server();
-server.get('/uploads', (req, res) => {
-    // Read from your DataStore
-    fs.readdir(server.datastore.path, (err, files) => {
-        // Format the JSON response and send it
-    }
-});
-```
-
 #### Custom file names:
 ```js
 const fileNameFromUrl = (req) => {
