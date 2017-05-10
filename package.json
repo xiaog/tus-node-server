@@ -54,8 +54,10 @@
     "upyun": "^2.0.4"
   },
   "dependencies": {
+    "async": "^2.4.0",
     "configstore": "^2.0.0",
     "crypto-rand": "0.0.2",
+    "fluent-ffmpeg": "^2.1.2",
     "object-assign": "^4.1.0",
     "request": "^2.72.0"
   }
